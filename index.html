@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
@@ -53,7 +55,7 @@
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Merits</a>
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
         </li>
       </ul>
     </div>
@@ -69,18 +71,20 @@
         <div class="subheading mb-5">
           <a href="mailto:dan@sherlock-security.com">dan@sherlock-security.com</a>
         </div>
-        <p class="lead mb-5">Red Team Cyber Security Professional. I don't make things, I break things.</p>
+        <p class="lead mb-5">Red Team Cyber Security Student. I don't make things, I break things.</p>
         <div class="social-icons">
-          <a href="https://www.hackthebox.eu/profile/50344">
+          <a href="https://www.hackthebox.eu/profile/50344" data-toggle="tooltip" data-placement="bottom" title="HackTheBox">
             <i class="fas fa-cube"></i>
           </a>
-          <a href="https://github.com/SherlockSec">
+          <a href="https://github.com/SherlockSec" data-toggle="tooltip" data-placement="bottom" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://twitter.com/SherlockSec">
+          <a href="https://twitter.com/SherlockSec" data-toggle="tooltip" data-placement="bottom" title="Twitter">
             <i class="fab fa-twitter"></i>
           </a>
         </div>
+        <br />
+        <script src="https://www.hackthebox.eu/badge/50344"></script>
       </div>
     </section>
 
@@ -112,21 +116,20 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">UTC Sheffield Olympic Legacy Park</h3>
+            <h3 class="mb-0">[Redacted - Contact for more information]</h3>
             <div class="subheading mb-3">A Level</div>
             <div>Cambridge Technical Level 3 Diploma: Cyber Security and Security Administration (2 A Level Equivalent)</div>
             <div>Cambridge Technical Level 3 Certificate: Programming (1 A Level Equivalent)</div>
             <div>A Level: Computer Science</div>
-            <p>Currently Studying</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - July 2021</span>
+            <span class="text-primary">September 2019 - July 2021<br /><br />Currently Studying</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">UTC Sheffield Olympic Legacy Park</h3>
+            <h3 class="mb-0">[Redacted - Contact for more information]</h3>
             <div class="subheading mb-3">GCSE</div>
             <div>GCSE Chemistry</div>
             <div>GCSE Computer Science</div>
@@ -136,10 +139,9 @@
             <div>GCSE Maths</div>
             <div>GCSE Physics</div>
             <div>GCSE Statistics</div>
-            <p>Awaiting Results</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - July 2019</span>
+            <span class="text-primary">September 2017 - July 2019<br /><br />Awaiting Results</span>
           </div>
         </div>
 
@@ -155,13 +157,22 @@
         <div class="subheading mb-3">Programming Languages</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <i class="fab fa-python"></i>
+            <i class="fab fa-python" data-toggle="tooltip" data-placement="top" title="Python"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
+            <i class="fab fa-js-square" data-toggle="tooltip" data-placement="top" title="JavaScript"></i>
           </li>
           <li class="list-inline-item">
-            <i class="fas fa-terminal"></i>
+            <i class="fas fa-terminal" data-toggle="tooltip" data-placement="top" title="Bash"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-csharp-plain" data-toggle="tooltip" data-placement="top" title="C#"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-html5-plain-wordmark" data-toggle="tooltip" data-placement="top" title="HTML"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-nodejs-plain" data-toggle="tooltip" data-placement="top" title="NodeJS"></i>
           </li>
 
         </ul>
@@ -170,16 +181,7 @@
         <ul class="fa-ul mb-0">
           <li>
             <i class="fa-li fa fa-check"></i>
-            </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            </li>
+          </li>
         </ul>
       </div>
     </section>
@@ -221,6 +223,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 
 </body>
 
